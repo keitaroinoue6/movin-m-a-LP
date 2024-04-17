@@ -31,7 +31,7 @@
     <div class="top_container">
       <p class="top_content_text">企業価値の<br>向上に特化した</p>
       <h1 class="top_heading">経営サポート</h1>
-      <p>事業継承のために企業価値を向上します。</p>
+      <p class="top_heading_sub">事業継承のために企業価値を向上します。</p>
       <div class="top_content">
         <img src="images/top_back.png" alt="">
       </div>
@@ -74,22 +74,22 @@
       <div class="features_content">
         <div class="features_wrapper">
           <div class="features_content_item">
-            <img class="features_image" src="images/features_image.png" alt="">
+            <img class="features_image" src="images/features_image01.png" alt="">
             <p class="features_content_title">チーム3〜5名のエキスパートが支援</p>
             <p class="features_content_title_sub">企業価値向上のエキスパートがチームを組んで御社の企業価値向上をご担当。ご満足いただけるM&Aに導きます。</p>
           </div>
           <div class="features_content_item">
-            <img class="features_image" src="images/features_image.png" alt="">
+            <img class="features_image" src="images/features_image02.png" alt="">
             <p class="features_content_title">定期的なミーティングで進捗を</p>
             <p class="features_content_title_sub">こまめたコミュニケーションで進捗をご確認いただくことで不安や課題を解消。御社の企業価値向上に伴走します。</p>
           </div>
           <div class="features_content_item">
-            <img class="features_image" src="images/features_image.png" alt="">
+            <img class="features_image" src="images/features_image03.png" alt="">
             <p class="features_content_title">M&Aまでのステップを丁寧に支援</p>
             <p class="features_content_title_sub">複雑で面倒なM&Aを、それぞれのステップで丁寧に支援。煩わしい手続きに忙殺されることなく、企業価値向上を目指せます。</p>
           </div>
           <div class="features_content_item">
-            <img class="features_image" src="images/features_image.png" alt="">
+            <img class="features_image" src="images/features_image04.png" alt="">
             <p class="features_content_title">大手企業やスタートアップの見学もOK!</p>
             <p class="features_content_title_sub">M&A先候補となる大手企業やスタートアップからの見学も。関係性の構築と好条件でのM&Aを目指します。</p>
           </div>
@@ -255,6 +255,104 @@
       // ページ内で指定したセクションにスクロールする
       document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('.worries_container');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('section#features');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('.image-text-container');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('#goal');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('section#service');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('#schedule');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const worriesContainer = document.querySelector('.form_container');
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              worriesContainer.style.animation = 'fadeInUp 2s ease-out forwards';
+            }
+          });
+      });
+
+      observer.observe(worriesContainer);
+    });
   </script>
   <footer id="footer">
     <div class="footer_container">

@@ -126,6 +126,10 @@ img.top_logo {
   font-size: 30px;
   font-weight: bold;
   padding-top: 92px;
+  animation-name:fadeUpAnime;
+  animation-duration:6s;
+  animation-fill-mode:forwards;
+  opacity:0;
 }
 
 @media screen and (max-width:768px) {
@@ -139,6 +143,29 @@ img.top_logo {
   font-size: 62px;
   font-weight: bolder;
   margin: 32px 0 0 0;
+  animation-name:fadeUpAnime;
+  animation-duration:5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top_heading_sub {
+  animation-name:fadeUpAnime;
+  animation-duration:7s;
+  animation-fill-mode:forwards;
+  opacity:0;
 }
 
 @media screen and (max-width:768px) {
@@ -149,6 +176,21 @@ img.top_logo {
 
 .top_content {
   position: relative; /* 子要素に相対位置を設定 */
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    z-index: -1;
+  }
 }
 
 .top_content img {
@@ -1056,4 +1098,17 @@ a.footer_items_link {
 
 img.footer_telephone_img {
   width: 25px;
+}
+
+/* アニメーション */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
